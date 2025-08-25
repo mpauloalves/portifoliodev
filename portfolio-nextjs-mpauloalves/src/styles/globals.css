@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body, #__next {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased transition-colors duration-300;
+}
+
+.dark body {
+  @apply bg-dark-bg text-light-text;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-secondary text-white font-medium 
+    hover:shadow-lg hover:scale-105 transition-all duration-300;
+  }
+  
+  .btn-outline {
+    @apply px-6 py-3 rounded-lg border border-primary text-primary dark:text-light-text 
+    hover:bg-primary/10 transition-all duration-300;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-dark-card rounded-xl shadow-md hover:shadow-xl transition-all duration-300;
+  }
+}
