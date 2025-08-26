@@ -37,7 +37,7 @@ export default function Hero(){
             <a href="#projects" className="btn-primary">
               Ver Projetos
             </a>
-            <a href="/cv.pdf" download className="btn-outline">
+            <a href="/Marcos.pdf" download className="btn-outline">
               Download CV
             </a>
           </div>
@@ -53,7 +53,7 @@ export default function Hero(){
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-secondary opacity-20 blur-xl" />
             <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-dark-card shadow-xl">
               <Image 
-                src="/avatar.svg" 
+                src="/avatar.png" 
                 alt="Marcos Paulo Alves" 
                 fill
                 style={{ objectFit: 'cover' }}
